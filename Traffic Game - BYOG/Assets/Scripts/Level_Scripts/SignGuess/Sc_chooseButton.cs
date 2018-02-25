@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Playables;
 
 public class Sc_chooseButton : MonoBehaviour {
 
@@ -15,6 +16,9 @@ public class Sc_chooseButton : MonoBehaviour {
 	public Text rightAnswer;
 	public Text wrongAnswer;
 
+	public GameObject crashedImg;
+
+	public PlayableDirector pd;
 	//For Checking Answer
 	public void checkAnswer(){
 		CorrectAnswer = Sc_optionsController.rand;
@@ -23,8 +27,16 @@ public class Sc_chooseButton : MonoBehaviour {
 			wrongAnswer.gameObject.SetActive (false);
 			rightAnswer.gameObject.SetActive (true);
 		} else {
-			rightAnswer.gameObject.SetActive (false);
-			wrongAnswer.gameObject.SetActive (true);
+			Out();
 		}
+	}
+
+	public void Out(){
+		Invoke ("CrashedImgShow", 1.3f);
+		pd.Play ();
+	}
+
+	void CrashedImgShow(){
+		crashedImg.SetActive (true);
 	}
 }

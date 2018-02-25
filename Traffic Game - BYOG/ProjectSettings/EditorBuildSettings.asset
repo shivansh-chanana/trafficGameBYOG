@@ -26,3 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Levels/Level_ZebraCrossing.unity
     guid: ca93ba1296b373b41b637b097f48e85e
+  - enabled: 1
+    path: Assets/Scene/Out.unity
+    guid: cd41c00b8acc7c2448b257fcf82642e1
