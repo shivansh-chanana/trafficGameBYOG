@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Sc_GameOver : MonoBehaviour {
 
@@ -10,6 +11,7 @@ public class Sc_GameOver : MonoBehaviour {
 	public Button retryButton;
 
 	public static int remLife = 3;
+
 	int tempRemLife = 3;
 
 	// Use this for initialization
@@ -18,6 +20,9 @@ public class Sc_GameOver : MonoBehaviour {
 			Invoke ("OutMethod", 1f);
 			tempRemLife = remLife;
 		}
+
+		if (remLife > 0)
+			Invoke ("RandomScene",2f);
 	}
 	
 	// Update is called once per frame
@@ -40,5 +45,9 @@ public class Sc_GameOver : MonoBehaviour {
 			lifeColor.color = Color.yellow;
 		if (remLife  == 1)
 			lifeColor.color = Color.red;
+	}
+
+	void RandomScene(){
+		Sc_RandomScene.RandomSceneSelection ();
 	}
 }

@@ -8,6 +8,10 @@ public class Sc_Ambulance : MonoBehaviour {
 
 	float moveSpeed = 1f;
 
+	public static bool ambulanceReached = false;
+
+	float timeBarFillAmount;
+
 	// Use this for initialization
 	void Start () {
 		move = true;
@@ -16,14 +20,27 @@ public class Sc_Ambulance : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		timeBarFillAmount = Sc_TimerBar.fillAmount;
+
 		if (move)
 			transform.Translate (0, Mathf.Lerp(0,moveSpeed,0.05f), 0);
 		else
 			transform.Translate (0, 0, 0);
+
+		if (timeBarFillAmount <= 0 && ambulanceReached == false)
+			Sc_chooseButton.ChangeScreen (); 
+
+		if (timeBarFillAmount <= 0 && ambulanceReached == true)
+			Sc_chooseButton.Win (); 
+
 	}
 
 	void OnTriggerEnter2D(Collider2D col){
-		move = false;
+		
+
+		if (col.gameObject.tag == "Finish")
+			ambulanceReached = true;
+		else move = false;
 	}
 
 	void OnTriggerExit2D(Collider2D col){

@@ -7,27 +7,33 @@ public class Sc_PeopleMove : MonoBehaviour {
 
 	bool move = Sc_OnTriggerPeople.move;
 
-	float speed = 0f;
+	public float speed = 0.01f;
 
 	public GameObject died;
 
-	void Start(){
-		speed = Random.Range (0.05f, 0.2f);
-	}
+	public static bool colDead = false;
 
 	// Update is called once per frame
 	void Update () {
 
 		move = Sc_OnTriggerPeople.move;
 
-		if (move)
-			transform.Translate (new Vector3(speed,0,0));
-
+		if (colDead == false) {
+			if (move)
+				transform.Translate (new Vector3 (speed, 0, 0));
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D col){
-		if (col.gameObject.tag == "Car")
-			died.SetActive (true);
+		if (col.gameObject.tag == "Car") {
+			if (!colDead) {
+				Invoke ("Dead", 2f);
+				colDead = true;
+			}
+		}
 	}
 
+	void Dead(){
+		Sc_chooseButton.ChangeScreen ();
+	}
 }

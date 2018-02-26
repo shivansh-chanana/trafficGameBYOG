@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 public class Sc_chooseButton : MonoBehaviour {
 
@@ -24,12 +25,13 @@ public class Sc_chooseButton : MonoBehaviour {
 		CorrectAnswer = Sc_optionsController.rand;
 
 		if (CorrectAnswer == buttonNo) {
-			wrongAnswer.gameObject.SetActive (false);
-			rightAnswer.gameObject.SetActive (true);
+			Win ();
 		} else {
 			Out();
 		}
 	}
+
+
 
 	public void Out(){
 		Invoke ("CrashedImgShow", 1.3f);
@@ -38,5 +40,21 @@ public class Sc_chooseButton : MonoBehaviour {
 
 	void CrashedImgShow(){
 		crashedImg.SetActive (true);
+		Invoke ("ChangeScreenNoStatic", 0.5f);
 	}
+
+	public static void Win(){
+		SceneManager.LoadScene ("Out");
+	}
+
+	public static void ChangeScreen(){
+		Sc_GameOver.remLife--;
+		SceneManager.LoadScene ("Out");
+	}
+
+	public void ChangeScreenNoStatic(){
+		Sc_GameOver.remLife--;
+		SceneManager.LoadScene ("Out");
+	}
+
 }

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Sc_RandomScene : MonoBehaviour {
 
-	int randomSceneRange = 0;
+	public static int randomSceneRange = 0;
 
 	public void goToMenu(){
 		SceneManager.LoadScene(0);
@@ -15,10 +15,24 @@ public class Sc_RandomScene : MonoBehaviour {
 		SceneManager.LoadScene(1);
 	}
 
-	public void RandomSceneSelection(){
-		randomSceneRange = Random.Range (2,7);
+	#region Make Changes Together
+	public static void RandomSceneSelection(){
+		randomSceneRange = Random.Range (2,5);
 
 		SceneManager.LoadScene(randomSceneRange);
+		//SceneManager.LoadScene(4);	
+	}
+
+	public void RandomSceneSelectionForStartScreen(){
+		randomSceneRange = Random.Range (2,5);
+
+		SceneManager.LoadScene(randomSceneRange);
+	//	SceneManager.LoadScene(4);	
+	}
+	#endregion
+
+	public void ResetValues(){
+		Sc_GameOver.remLife = 3;
 	}
 
 }

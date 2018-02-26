@@ -9,6 +9,6 @@ public class Sc_CameraMov : MonoBehaviour {
 	public float movSmoothness = 0.05f;
 	// Update is called once per frame
 	void Update () {
-		transform.position = new Vector3 (transform.position.x, Mathf.Lerp (transform.position.y,car.transform.position.y + 2.5f,movSmoothness),-10);
+		if(Sc_CarHold.finish == false)transform.position = new Vector3 (transform.position.x, Mathf.Lerp (transform.position.y,car.transform.position.y + 2.5f,movSmoothness),-10);
 	}
 }

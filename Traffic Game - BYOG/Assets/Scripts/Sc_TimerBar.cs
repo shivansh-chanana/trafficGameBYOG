@@ -5,12 +5,18 @@ using UnityEngine.UI;
 
 public class Sc_TimerBar : MonoBehaviour {
 	
-	public static float time = 5;
+	public static float time;
 	float  tempTime = 0;
+
+	public float changableTime = 0;
 
  	Image timerBar;
 
+	public static float fillAmount;
+
 	void Start(){
+
+		time = changableTime;
 
 		timerBar = GetComponent<Image> ();
 
@@ -24,6 +30,8 @@ public class Sc_TimerBar : MonoBehaviour {
 			time -= Time.deltaTime;
 		else
 			time = 0;
+
+		fillAmount = timerBar.fillAmount;
 
 		timerBarFill ();
 	}
