@@ -14,6 +14,11 @@ public class Sc_PeopleMove : MonoBehaviour {
 	public static bool colDead = false;
 
 	// Update is called once per frame
+
+	void Awake(){	
+		colDead = false;
+	}
+
 	void Update () {
 
 		move = Sc_OnTriggerPeople.move;

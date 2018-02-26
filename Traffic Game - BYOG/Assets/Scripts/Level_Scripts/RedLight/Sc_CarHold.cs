@@ -9,8 +9,10 @@ public class Sc_CarHold : MonoBehaviour {
 	public static bool finish = false;
 
 	// Use this for initialization
-	void Start () {
-		
+	void Awake () {
+		finish = false;
+		stopMoving = false;
+		Sc_TimerBar.fillAmount = 10;
 	}
 	
 	// Update is called once per frame

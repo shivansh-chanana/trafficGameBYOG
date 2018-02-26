@@ -14,6 +14,7 @@ public class Sc_Ambulance : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		ambulanceReached = false;
 		move = true;
 	}
 	
@@ -26,12 +27,14 @@ public class Sc_Ambulance : MonoBehaviour {
 			transform.Translate (0, Mathf.Lerp(0,moveSpeed,0.05f), 0);
 		else
 			transform.Translate (0, 0, 0);
-
-		if (timeBarFillAmount <= 0 && ambulanceReached == false)
+		
+		if (timeBarFillAmount <= 0 && ambulanceReached == false) {
 			Sc_chooseButton.ChangeScreen (); 
+		}
 
-		if (timeBarFillAmount <= 0 && ambulanceReached == true)
+		if (timeBarFillAmount <= 0 && ambulanceReached == true) {
 			Sc_chooseButton.Win (); 
+		}
 
 	}
 

@@ -7,6 +7,8 @@ public class Sc_RandomScene : MonoBehaviour {
 
 	public static int randomSceneRange = 0;
 
+	public static int tempOldScene = 0;
+
 	public void goToMenu(){
 		SceneManager.LoadScene(0);
 	}
@@ -17,22 +19,38 @@ public class Sc_RandomScene : MonoBehaviour {
 
 	#region Make Changes Together
 	public static void RandomSceneSelection(){
+		#region noScene Repeat
 		randomSceneRange = Random.Range (2,5);
-
+		if (tempOldScene != 0) {
+			for (; tempOldScene == randomSceneRange;)
+				randomSceneRange = Random.Range (2, 5);
+		}
+		tempOldScene = randomSceneRange;
+		#endregion
+		Sc_TimerBar.time = 10;
 		SceneManager.LoadScene(randomSceneRange);
-		//SceneManager.LoadScene(4);	
 	}
 
 	public void RandomSceneSelectionForStartScreen(){
-		randomSceneRange = Random.Range (2,5);
-
+		noSceneRepeat ();
+		Sc_TimerBar.time = 10;
 		SceneManager.LoadScene(randomSceneRange);
-	//	SceneManager.LoadScene(4);	
 	}
 	#endregion
+
+	void noSceneRepeat(){
+		randomSceneRange = Random.Range (2,5);
+		if (tempOldScene != 0) {
+			for (; tempOldScene == randomSceneRange;)
+				randomSceneRange = Random.Range (2, 5);
+		}
+		tempOldScene = randomSceneRange;
+	}
+
 
 	public void ResetValues(){
 		Sc_GameOver.remLife = 3;
 	}
+
 
 }

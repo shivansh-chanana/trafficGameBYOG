@@ -14,7 +14,9 @@ public class Sc_redLightTimer : MonoBehaviour {
 	public GameObject car;
 	public Transform zebra;
 
-	void Start () {
+
+	void Awake () {
+		redLightOn = false;
 		Invoke ("RedLight", timer);
 	}
 

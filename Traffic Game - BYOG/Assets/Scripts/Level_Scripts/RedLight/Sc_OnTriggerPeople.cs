@@ -6,6 +6,10 @@ public class Sc_OnTriggerPeople : MonoBehaviour {
 
 	public static bool move = false;
 
+	void Awake(){
+		move = false;
+	}
+
 	void OnTriggerEnter2D(Collider2D col){
 		move = true;	
 	}

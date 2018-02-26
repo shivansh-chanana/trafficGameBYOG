@@ -10,7 +10,7 @@ public class Sc_CarDrag : MonoBehaviour {
 		Vector2 mousePos = new Vector2 (Input.mousePosition.x, Input.mousePosition.y);
 		Vector2 objPos = Camera.main.ScreenToWorldPoint (mousePos);
 
-		rb.velocity = (objPos - rb.position) * 5;
+		rb.velocity = (objPos - rb.position) * 10;
 		//transform.position = objPos;
 	}
 

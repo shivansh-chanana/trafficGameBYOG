@@ -13,14 +13,15 @@ public class Sc_chooseButton : MonoBehaviour {
 	//Correct answer choosen in OptionController Script
 	int CorrectAnswer = -1;
 
-	//Right and Wrong Text
-	public Text rightAnswer;
-	public Text wrongAnswer;
-
 	public GameObject crashedImg;
 
 	public PlayableDirector pd;
 	//For Checking Answer
+
+	void Awake(){
+		CorrectAnswer = -1;
+	}
+
 	public void checkAnswer(){
 		CorrectAnswer = Sc_optionsController.rand;
 
@@ -30,8 +31,6 @@ public class Sc_chooseButton : MonoBehaviour {
 			Out();
 		}
 	}
-
-
 
 	public void Out(){
 		Invoke ("CrashedImgShow", 1.3f);
@@ -44,16 +43,19 @@ public class Sc_chooseButton : MonoBehaviour {
 	}
 
 	public static void Win(){
+		Sc_TimerBar.time = 10;
 		SceneManager.LoadScene ("Out");
 	}
 
 	public static void ChangeScreen(){
 		Sc_GameOver.remLife--;
+		Sc_TimerBar.time = 10;
 		SceneManager.LoadScene ("Out");
 	}
 
 	public void ChangeScreenNoStatic(){
 		Sc_GameOver.remLife--;
+		Sc_TimerBar.time = 10;
 		SceneManager.LoadScene ("Out");
 	}
 

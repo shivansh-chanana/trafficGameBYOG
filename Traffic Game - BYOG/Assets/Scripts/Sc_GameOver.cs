@@ -15,7 +15,8 @@ public class Sc_GameOver : MonoBehaviour {
 	int tempRemLife = 3;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
+
 		if (tempRemLife != remLife) {
 			Invoke ("OutMethod", 1f);
 			tempRemLife = remLife;
@@ -35,6 +36,10 @@ public class Sc_GameOver : MonoBehaviour {
 			remLife = 0;
 			retryButton.gameObject.SetActive (true);
 		}
+	}
+
+	void LateUpdate(){
+		Sc_TimerBar.time = 10;
 	}
 
 	void OutMethod(){

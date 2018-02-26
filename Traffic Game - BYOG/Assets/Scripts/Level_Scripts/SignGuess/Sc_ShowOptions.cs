@@ -28,6 +28,7 @@ public class Sc_ShowOptions : MonoBehaviour {
 	void showOptions (){
 		pd.Play ();
 		Invoke ("destroyAfterAnim", 0.5f);
+		Sc_TimerBar.time = 10;
 		end = true;
 	}
 
