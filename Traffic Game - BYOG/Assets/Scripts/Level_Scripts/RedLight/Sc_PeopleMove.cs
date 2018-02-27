@@ -9,14 +9,16 @@ public class Sc_PeopleMove : MonoBehaviour {
 
 	public float speed = 0.01f;
 
-	public GameObject died;
-
 	public static bool colDead = false;
+
+	Animator anim;
 
 	// Update is called once per frame
 
 	void Awake(){	
 		colDead = false;
+
+		anim = GetComponent<Animator> ();
 	}
 
 	void Update () {
@@ -33,6 +35,7 @@ public class Sc_PeopleMove : MonoBehaviour {
 		if (col.gameObject.tag == "Car") {
 			if (!colDead) {
 				Invoke ("Dead", 2f);
+				anim.SetBool ("dead",true);
 				colDead = true;
 			}
 		}

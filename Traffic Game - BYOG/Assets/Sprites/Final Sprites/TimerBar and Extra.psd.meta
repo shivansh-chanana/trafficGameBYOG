@@ -9,6 +9,7 @@ TextureImporter:
     21300004: TimerBar and Extra_2
     21300006: TimerBar and Extra_3
     21300008: TimerBar and Extra_4
+    21300010: TimerBar and Extra_5
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -165,7 +166,7 @@ TextureImporter:
         width: 132
         height: 380
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,6 +179,20 @@ TextureImporter:
         y: 467
         width: 131
         height: 379
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TimerBar and Extra_5
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 505
+        width: 384
+        height: 338
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
