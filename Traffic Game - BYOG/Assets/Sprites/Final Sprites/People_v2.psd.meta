@@ -22,6 +22,7 @@ TextureImporter:
     21300030: People_v2_15
     21300032: People_v2_16
     21300034: People_v2_17
+    21300036: People_v2_18
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -373,6 +374,20 @@ TextureImporter:
         y: 253
         width: 245
         height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: People_v2_18
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 944
+        width: 90
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

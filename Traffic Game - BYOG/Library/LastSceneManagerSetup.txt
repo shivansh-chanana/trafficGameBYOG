@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/Menu.unity
+- path: Assets/Scene/Levels/Level_OverTaking.unity
   isLoaded: 1
   isActive: 1

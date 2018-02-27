@@ -20,10 +20,10 @@ public class Sc_RandomScene : MonoBehaviour {
 	#region Make Changes Together
 	public static void RandomSceneSelection(){
 		#region noScene Repeat
-		randomSceneRange = Random.Range (2,5);
+		randomSceneRange = Random.Range (2,7);
 		if (tempOldScene != 0) {
 			for (; tempOldScene == randomSceneRange;)
-				randomSceneRange = Random.Range (2, 5);
+				randomSceneRange = Random.Range (2, 7);
 		}
 		tempOldScene = randomSceneRange;
 		#endregion
@@ -39,10 +39,10 @@ public class Sc_RandomScene : MonoBehaviour {
 	#endregion
 
 	void noSceneRepeat(){
-		randomSceneRange = Random.Range (2,5);
+		randomSceneRange = Random.Range (2,7);
 		if (tempOldScene != 0) {
 			for (; tempOldScene == randomSceneRange;)
-				randomSceneRange = Random.Range (2, 5);
+				randomSceneRange = Random.Range (2, 7);
 		}
 		tempOldScene = randomSceneRange;
 	}
