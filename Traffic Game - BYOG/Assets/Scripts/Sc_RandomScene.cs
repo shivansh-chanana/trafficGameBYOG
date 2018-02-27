@@ -14,7 +14,7 @@ public class Sc_RandomScene : MonoBehaviour {
 	}
 
 	public void goToPreGameScene (){
-		SceneManager.LoadScene(1);
+		SceneManager.LoadScene(0);
 	}
 
 	#region Make Changes Together

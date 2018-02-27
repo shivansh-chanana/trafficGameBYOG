@@ -26,6 +26,9 @@ public class Sc_TimerBar : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		if (Input.GetKeyDown (KeyCode.Z))
+			time = 0;
+
 		if (time > 0)
 			time -= Time.deltaTime;
 		else

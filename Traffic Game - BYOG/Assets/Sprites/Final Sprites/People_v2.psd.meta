@@ -17,6 +17,11 @@ TextureImporter:
     21300020: People_v2_10
     21300022: People_v2_11
     21300024: People_v2_12
+    21300026: People_v2_13
+    21300028: People_v2_14
+    21300030: People_v2_15
+    21300032: People_v2_16
+    21300034: People_v2_17
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -298,6 +303,76 @@ TextureImporter:
         y: 264
         width: 273
         height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: People_v2_13
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 891
+        width: 173
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: People_v2_14
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 891
+        width: 184
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: People_v2_15
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 843
+        width: 186
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: People_v2_16
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1122
+        width: 271
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: People_v2_17
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 253
+        width: 245
+        height: 260
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

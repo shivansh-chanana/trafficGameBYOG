@@ -10,6 +10,11 @@ TextureImporter:
     21300006: TimerBar and Extra_3
     21300008: TimerBar and Extra_4
     21300010: TimerBar and Extra_5
+    21300012: TimerBar and Extra_6
+    21300014: TimerBar and Extra_7
+    21300016: TimerBar and Extra_8
+    21300018: TimerBar and Extra_9
+    21300020: TimerBar and Extra_10
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -194,7 +199,77 @@ TextureImporter:
         width: 384
         height: 338
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TimerBar and Extra_6
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 295
+        width: 528
+        height: 899
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TimerBar and Extra_7
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 295
+        width: 527
+        height: 899
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TimerBar and Extra_8
+      rect:
+        serializedVersion: 2
+        x: 2006
+        y: 295
+        width: 537
+        height: 899
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TimerBar and Extra_9
+      rect:
+        serializedVersion: 2
+        x: 2602
+        y: 295
+        width: 537
+        height: 899
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TimerBar and Extra_10
+      rect:
+        serializedVersion: 2
+        x: 3257
+        y: 217
+        width: 658
+        height: 1018
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
