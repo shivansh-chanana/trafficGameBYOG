@@ -9,12 +9,12 @@ public class Sc_CarTilt : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		transform.Translate(new Vector2((Input.acceleration.x) * magnitude ,0.1f));
+		transform.Translate(new Vector2((Input.acceleration.x) * magnitude ,0.1f * Time.deltaTime * 60));
 	}
 		
 	void OnCollisionEnter2D(Collision2D col){
 		if (col.gameObject.tag == "Car")
-			Invoke ("Lose", 0.5f);
+			Invoke ("Lose", 0.2f);
 	}
 
 	void OnTriggerEnter2D(Collider2D col){

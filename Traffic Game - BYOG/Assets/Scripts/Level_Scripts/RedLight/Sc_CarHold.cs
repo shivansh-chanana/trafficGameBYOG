@@ -20,7 +20,7 @@ public class Sc_CarHold : MonoBehaviour {
 		if (stopMoving && finish == false)
 			transform.Translate (0, 0, 0);
 		else if(Sc_PeopleMove.colDead == false)
-			transform.Translate (0, 0.1f, 0);
+			transform.Translate (0, 0.1f * Time.deltaTime * 60, 0);
 
 		if (Sc_TimerBar.fillAmount <= 0 && finish == false)
 			Lose ();

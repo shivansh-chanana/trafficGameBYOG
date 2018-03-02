@@ -15,6 +15,7 @@ TextureImporter:
     21300016: Cars_8
     21300018: Cars_9
     21300020: Cars_10
+    21300022: Cars_11
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -268,6 +269,20 @@ TextureImporter:
         y: 349
         width: 224
         height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cars_11
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 173
+        width: 297
+        height: 93
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

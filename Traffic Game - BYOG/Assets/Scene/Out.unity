@@ -237,6 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97b464052c996374cbbf183282a068bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fx_click: {fileID: 0}
 --- !u!114 &45732471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -689,7 +690,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -2
   m_Sprite: {fileID: 21300018, guid: 3221ac10d364a3a43a554627122d7586, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.77205884, g: 0.77205884, b: 0.77205884, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -747,6 +748,8 @@ MonoBehaviour:
   sR: {fileID: 0}
   retryButton: {fileID: 45732467}
   policeMen_Animator: {fileID: 571269707}
+  fx_OhNo: {fileID: 8300000, guid: 945f112de7caad746931266d5b14111a, type: 3}
+  fx_Yeayi: {fileID: 8300000, guid: 7ccaf3de08bcae845bdd7fc140ff700a, type: 3}
 --- !u!212 &1444503026
 SpriteRenderer:
   m_ObjectHideFlags: 0

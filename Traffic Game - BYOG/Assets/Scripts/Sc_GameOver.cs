@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using EazyTools.SoundManager;
+
 
 public class Sc_GameOver : MonoBehaviour {
 
@@ -18,6 +20,9 @@ public class Sc_GameOver : MonoBehaviour {
 
 	public Animator policeMen_Animator;
 
+	public AudioClip fx_OhNo;
+	public AudioClip fx_Yeayi;
+
 	// Use this for initialization
 	void Awake () {
 	}
@@ -27,6 +32,7 @@ public class Sc_GameOver : MonoBehaviour {
 
 		//If got out
 		if (tempRemLife != remLife) {
+			SoundManager.PlaySound (fx_OhNo);
 			policeMen_Animator.SetBool ("Out", true);
 			Invoke ("OutMethod", 1f);
 			tempRemLife = remLife;
@@ -40,6 +46,7 @@ public class Sc_GameOver : MonoBehaviour {
 				sR.sprite = sprite_remLife [1];
 			
 		} else {
+			SoundManager.PlaySound (fx_Yeayi);
 			OutMethod ();
 		}
 			

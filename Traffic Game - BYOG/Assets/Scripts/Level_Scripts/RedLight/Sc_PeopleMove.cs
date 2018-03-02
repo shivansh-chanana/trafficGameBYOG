@@ -27,7 +27,7 @@ public class Sc_PeopleMove : MonoBehaviour {
 
 		if (colDead == false) {
 			if (move)
-				transform.Translate (new Vector3 (speed, 0, 0));
+				transform.Translate (new Vector3 (speed * Time.deltaTime * 60, 0, 0));
 		}
 	}
 

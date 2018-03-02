@@ -27,7 +27,7 @@ public class Sc_ZebraVerticalDrag : MonoBehaviour {
 
 			zebra_anim.enabled = true;
 			zebra_anim.Play ("People_Walk_anim");
-			transform.Translate (0.03f, 0, 0);	
+			transform.Translate (0.03f * Time.deltaTime * 60, 0, 0);	
 		}
 	}
 

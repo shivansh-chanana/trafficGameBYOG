@@ -5,7 +5,8 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - fx_click: {fileID: 8300000, guid: 85c28436df665cc46bb86ec0ff7f343b, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

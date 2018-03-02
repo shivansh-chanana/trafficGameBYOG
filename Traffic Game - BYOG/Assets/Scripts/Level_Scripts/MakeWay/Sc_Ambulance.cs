@@ -24,7 +24,7 @@ public class Sc_Ambulance : MonoBehaviour {
 		timeBarFillAmount = Sc_TimerBar.fillAmount;
 
 		if (move)
-			transform.Translate (0, Mathf.Lerp(0,moveSpeed,0.05f), 0);
+			transform.Translate (0, Mathf.Lerp(0,moveSpeed ,0.05f * Time.deltaTime * 66), 0);
 		else
 			transform.Translate (0, 0, 0);
 		
@@ -41,8 +41,10 @@ public class Sc_Ambulance : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D col){
 		
 
-		if (col.gameObject.tag == "Finish")
+		if (col.gameObject.tag == "Finish") {
 			ambulanceReached = true;
+			Sc_chooseButton.Win (); 
+		}
 		else move = false;
 	}
 

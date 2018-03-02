@@ -23,6 +23,11 @@ TextureImporter:
     21300032: People_v2_16
     21300034: People_v2_17
     21300036: People_v2_18
+    21300038: People_v2_19
+    21300040: People_v2_20
+    21300042: People_v2_21
+    21300044: People_v2_22
+    21300046: People_v2_23
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -388,6 +393,76 @@ TextureImporter:
         y: 944
         width: 90
         height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: People_v2_19
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 760
+        width: 369
+        height: 510
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: People_v2_20
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 216
+        width: 299
+        height: 505
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: People_v2_21
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 692
+        width: 205
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: People_v2_22
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 121
+        width: 202
+        height: 554
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: People_v2_23
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 29
+        width: 209
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
