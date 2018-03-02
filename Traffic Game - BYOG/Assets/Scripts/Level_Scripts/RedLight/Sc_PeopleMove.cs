@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using EazyTools.SoundManager;
 
 public class Sc_PeopleMove : MonoBehaviour {
 
@@ -13,6 +14,7 @@ public class Sc_PeopleMove : MonoBehaviour {
 
 	Animator anim;
 
+	public AudioClip fx_crash;
 	// Update is called once per frame
 
 	void Awake(){	
@@ -35,6 +37,7 @@ public class Sc_PeopleMove : MonoBehaviour {
 		if (col.gameObject.tag == "Car") {
 			if (!colDead) {
 				Invoke ("Dead", 2f);
+				SoundManager.PlaySound (fx_crash);
 				anim.SetBool ("dead",true);
 				colDead = true;
 			}

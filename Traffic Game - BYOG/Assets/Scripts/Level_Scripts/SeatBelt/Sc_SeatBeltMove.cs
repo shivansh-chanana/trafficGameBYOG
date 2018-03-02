@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EazyTools.SoundManager;
 
 public class Sc_SeatBeltMove : MonoBehaviour {
 
@@ -12,6 +13,8 @@ public class Sc_SeatBeltMove : MonoBehaviour {
 	public Transform targetObject;
 
 	public GameObject superman;
+
+	public AudioClip fx_seatbelt;
 
 	void Start(){
 		superman.SetActive (false);
@@ -33,6 +36,7 @@ public class Sc_SeatBeltMove : MonoBehaviour {
 	}
 		
 	public void MoveTowardsTarget(){
+		SoundManager.PlaySound (fx_seatbelt);
 		transform.position = Vector2.MoveTowards (new Vector2(transform.position.x,transform.position.y), new Vector2(targetObject.transform.position.x,targetObject.transform.position.y), 0.6f);
 	}
 

@@ -44,8 +44,10 @@ public class Sc_GameOver : MonoBehaviour {
 				sR.sprite = sprite_remLife [0];
 			if (remLife == 1)
 				sR.sprite = sprite_remLife [1];
-			
+
 		} else {
+			SumScore.Add (1);
+			SumScore.SaveHighScore ();
 			SoundManager.PlaySound (fx_Yeayi);
 			OutMethod ();
 		}

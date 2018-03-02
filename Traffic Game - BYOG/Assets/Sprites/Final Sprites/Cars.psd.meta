@@ -16,6 +16,9 @@ TextureImporter:
     21300018: Cars_9
     21300020: Cars_10
     21300022: Cars_11
+    21300024: Cars_12
+    21300026: Cars_13
+    21300028: Cars_14
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -283,6 +286,48 @@ TextureImporter:
         y: 173
         width: 297
         height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cars_12
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 888
+        width: 354
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cars_13
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 624
+        width: 379
+        height: 249
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cars_14
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 59
+        width: 650
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

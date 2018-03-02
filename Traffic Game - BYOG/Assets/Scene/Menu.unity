@@ -1667,6 +1667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fx_click: {fileID: 8300000, guid: 85c28436df665cc46bb86ec0ff7f343b, type: 3}
+  gameplayMusic: {fileID: 8300000, guid: 3639d79bd99aaa7498733be249c66d0a, type: 3}
 --- !u!114 &1356377763
 MonoBehaviour:
   m_ObjectHideFlags: 0

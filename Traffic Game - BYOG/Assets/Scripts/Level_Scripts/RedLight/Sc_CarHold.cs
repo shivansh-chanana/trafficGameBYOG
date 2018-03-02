@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EazyTools.SoundManager;
 
 public class Sc_CarHold : MonoBehaviour {
 
 	bool stopMoving = false;
 
 	public static bool finish = false;
+
+	public AudioClip car_brakes;
 
 	// Use this for initialization
 	void Awake () {
@@ -20,13 +23,14 @@ public class Sc_CarHold : MonoBehaviour {
 		if (stopMoving && finish == false)
 			transform.Translate (0, 0, 0);
 		else if(Sc_PeopleMove.colDead == false)
-			transform.Translate (0, 0.1f * Time.deltaTime * 60, 0);
+			transform.Translate (0, 0.1f , 0);
 
 		if (Sc_TimerBar.fillAmount <= 0 && finish == false)
 			Lose ();
 	}
 
 	public void OnMouseDown(){
+		SoundManager.PlaySound (car_brakes);
 		stopMoving = true;
 	}
 

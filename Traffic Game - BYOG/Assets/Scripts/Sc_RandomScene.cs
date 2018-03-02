@@ -11,6 +11,7 @@ public class Sc_RandomScene : MonoBehaviour {
 	public static int tempOldScene = 0;
 
 	public AudioClip fx_click;
+	public AudioClip gameplayMusic;
 
 	public void goToMenu(){
 		SceneManager.LoadScene(0);
@@ -23,6 +24,7 @@ public class Sc_RandomScene : MonoBehaviour {
 	#region Make Changes Together
 	public static void RandomSceneSelection(){
 		#region noScene Repeat
+
 		randomSceneRange = Random.Range (2,8);
 		if (tempOldScene != 0) {
 			for (; tempOldScene == randomSceneRange;)
@@ -36,6 +38,7 @@ public class Sc_RandomScene : MonoBehaviour {
 
 	public void RandomSceneSelectionForStartScreen(){
 
+		SumScore.Reset ();
 		SoundManager.PlayUISound (fx_click,100);
 		noSceneRepeat ();
 		Sc_TimerBar.time = 10;
@@ -55,6 +58,7 @@ public class Sc_RandomScene : MonoBehaviour {
 
 	public void ResetValues(){
 		Sc_GameOver.remLife = 3;
+		SoundManager.PlayMusic (gameplayMusic,20f,true,true);
 	}
 
 

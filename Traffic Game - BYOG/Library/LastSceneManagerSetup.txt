@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/Levels/Level_OverTaking.unity
+- path: Assets/Scene/Levels/Level_ZebraCrossing.unity
   isLoaded: 1
   isActive: 1

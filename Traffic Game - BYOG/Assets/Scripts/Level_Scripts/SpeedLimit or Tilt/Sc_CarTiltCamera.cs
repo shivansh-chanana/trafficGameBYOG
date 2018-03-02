@@ -17,6 +17,6 @@ public class Sc_CarTiltCamera : MonoBehaviour {
 
 	void Update () {
 
-		if(!stopFollowing)transform.position = new Vector3 (transform.position.x,car.transform.position.y + 2.4f,-10);
+		if(!stopFollowing)transform.position = new Vector3 (transform.position.x,car.transform.position.y + 1.8f,-10);
 	}
 }

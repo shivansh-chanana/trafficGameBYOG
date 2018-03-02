@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EazyTools.SoundManager;
+
 
 public class Sc_Ambulance : MonoBehaviour {
 
@@ -12,10 +14,13 @@ public class Sc_Ambulance : MonoBehaviour {
 
 	float timeBarFillAmount;
 
+	public AudioClip fx_ambulance;
+
 	// Use this for initialization
 	void Start () {
 		ambulanceReached = false;
 		move = true;
+		SoundManager.PlaySound (fx_ambulance,100f,true,null);
 	}
 	
 	// Update is called once per frame

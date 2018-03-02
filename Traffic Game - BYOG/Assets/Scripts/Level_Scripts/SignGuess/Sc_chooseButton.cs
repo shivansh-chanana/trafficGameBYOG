@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
+using EazyTools.SoundManager;
 
 public class Sc_chooseButton : MonoBehaviour {
 
@@ -18,6 +19,9 @@ public class Sc_chooseButton : MonoBehaviour {
 	public PlayableDirector pd;
 	//For Checking Answer
 
+	public AudioClip fx_wrongAnswer;
+	public AudioClip fx_click;
+
 	void Awake(){
 		CorrectAnswer = -1;
 	}
@@ -26,6 +30,7 @@ public class Sc_chooseButton : MonoBehaviour {
 		CorrectAnswer = Sc_optionsController.rand;
 
 		if (CorrectAnswer == buttonNo) {
+			SoundManager.PlayUISound (fx_click);
 			Win ();
 		} else {
 			Out();
@@ -33,6 +38,8 @@ public class Sc_chooseButton : MonoBehaviour {
 	}
 
 	public void Out(){
+
+		SoundManager.PlayUISound (fx_wrongAnswer);
 		Invoke ("CrashedImgShow", 1.3f);
 		pd.Play ();
 	}
